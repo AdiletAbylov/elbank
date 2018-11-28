@@ -1,7 +1,7 @@
 # Elbank
 
 **TODO: Add description**
-
+Elixir library to parse XML currency data from NBKR.kg 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed

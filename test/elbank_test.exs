@@ -2,7 +2,7 @@ defmodule ElbankTest do
   use ExUnit.Case
   doctest Elbank
 
-  test "greets the world" do
-    assert Elbank.hello() == :world
+  test "get_daily" do
+    Elbank.daily_currency()
   end
 end
