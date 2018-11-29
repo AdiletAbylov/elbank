@@ -26,7 +26,6 @@ defmodule Elbank do
   end
 
   defp currencyMapFrom(url) do
-    HTTPoison.start()
     result = HTTPoison.get!(url)
     utf_encoded = Codepagex.from_string!(result.body, "VENDORS/MISC/US-ASCII-QUOTES")
     prepared_string = String.replace(utf_encoded, @cp_encoding_string, @utf_encoding_string)
